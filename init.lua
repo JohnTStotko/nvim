@@ -1,3 +1,9 @@
+vim.o.tabstop = 2 -- Number of spaces a tab represents
+vim.o.shiftwidth = 2 -- Number of spaces for each indentation
+vim.o.expandtab = true -- Convert tabs to spaces
+
+-- LSP config
+
 vim.opt.rtp:append(vim.fn.stdpath("config") .. "/nvim-lspconfig")
 vim.opt.rtp:append(vim.fn.stdpath("config") .. "/mason.nvim")
 vim.opt.rtp:append(vim.fn.stdpath("config") .. "/mason-lspconfig.nvim")
