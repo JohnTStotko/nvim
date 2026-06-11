@@ -2,6 +2,14 @@ vim.o.tabstop = 2 -- Number of spaces a tab represents
 vim.o.shiftwidth = 2 -- Number of spaces for each indentation
 vim.o.expandtab = true -- Convert tabs to spaces
 
+vim.g.python_recommended_style = 0 -- ignore python defaults - I want 2 spaces for tabs!
+
+
+-- Label Highlighting
+vim.cmd("highlight ToDo guifg=#FFD866 guibg=#3A3F58")
+vim.cmd("syntax match ToDo \\TODO\\")
+
+
 -- LSP config
 
 vim.opt.rtp:append(vim.fn.stdpath("config") .. "/nvim-lspconfig")
