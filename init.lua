@@ -10,6 +10,12 @@ vim.cmd("highlight ToDo guifg=#FFD866 guibg=#3A3F58")
 vim.cmd("syntax match ToDo \\TODO\\")
 
 
+
+-- File Explorer
+vim.opt.rtp:append(vim.fn.stdpath("config") .. "/oil.nvim")
+require("oil").setup()
+
+
 -- LSP config
 
 vim.opt.rtp:append(vim.fn.stdpath("config") .. "/nvim-lspconfig")
