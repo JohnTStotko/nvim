@@ -4,6 +4,8 @@ vim.o.expandtab = true -- Convert tabs to spaces
 
 vim.g.python_recommended_style = 0 -- ignore python defaults - I want 2 spaces for tabs!
 
+-- :terminal behavior
+vim.opt.shell = 'powershell.exe'
 
 -- Label Highlighting
 vim.cmd("highlight ToDo guifg=#FFD866 guibg=#3A3F58")
