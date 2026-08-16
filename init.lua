@@ -4,9 +4,6 @@ vim.o.expandtab = true -- Convert tabs to spaces
 
 vim.g.python_recommended_style = 0 -- ignore python defaults - I want 2 spaces for tabs!
 
--- :terminal behavior
-vim.opt.shell = 'powershell.exe'
-
 -- Label Highlighting
 vim.cmd("highlight ToDo guifg=#FFD866 guibg=#3A3F58")
 vim.cmd("syntax match ToDo \\TODO\\")
@@ -14,8 +11,8 @@ vim.cmd("syntax match ToDo \\TODO\\")
 
 
 -- File Explorer
-vim.opt.rtp:append(vim.fn.stdpath("config") .. "/oil.nvim")
-require("oil").setup()
+--vim.opt.rtp:append(vim.fn.stdpath("config") .. "/oil.nvim")
+--require("oil").setup()
 
 
 -- LSP config
@@ -32,6 +29,6 @@ vim.lsp.config("*", {
 
 require("mason").setup()
 require("mason-lspconfig").setup {
-  ensure_installed = { "basedpyright", "lua_ls" }
+  ensure_installed = { "basedpyright", "lua_ls", "clangd" }
 }
 
