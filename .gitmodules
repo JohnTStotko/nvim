@@ -7,6 +7,3 @@
 [submodule "mason-lspconfig.nvim"]
 	path = mason-lspconfig.nvim
 	url = https://github.com/mason-org/mason-lspconfig.nvim
-[submodule "oil.nvim"]
-	path = oil.nvim
-	url = https://github.com/stevearc/oil.nvim
