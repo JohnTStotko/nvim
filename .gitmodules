@@ -7,3 +7,6 @@
 [submodule "mason-lspconfig.nvim"]
 	path = mason-lspconfig.nvim
 	url = https://github.com/mason-org/mason-lspconfig.nvim
+[submodule "lean.nvim"]
+	path = lean.nvim
+	url = https://github.com/Julian/lean.nvim.git

@@ -20,6 +20,7 @@ vim.cmd("syntax match ToDo \\TODO\\")
 vim.opt.rtp:append(vim.fn.stdpath("config") .. "/nvim-lspconfig")
 vim.opt.rtp:append(vim.fn.stdpath("config") .. "/mason.nvim")
 vim.opt.rtp:append(vim.fn.stdpath("config") .. "/mason-lspconfig.nvim")
+vim.opt.rtp:append(vim.fn.stdpath('config') .. '/lean.nvim')
 
 -- Add the same capabilities to ALL server configurations.
 -- Refer to :h vim.lsp.config() for more information.
